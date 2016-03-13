@@ -1,0 +1,9 @@
+/bin/
+/include/
+/lib/
+/local/
+/src/
+/site/.sass-cache/
+/site/bower_components/
+/site/static/css/*.css
+/site/static/css/*.css.map
