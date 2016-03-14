@@ -6,4 +6,5 @@
 * cd site
 * pip install -r requierements.txt
 * bower install
+* sass --watch static/css/sass:static/css/
 * python application.py
