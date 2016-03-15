@@ -14,6 +14,7 @@
     "tests"
   ],
   "dependencies": {
-    "foundation": "^5.5.3"
+    "foundation-sites": "https://github.com/zurb/foundation-sites.git#6.2.0",
+    "jquery": "^2.2.1"
   }
 }
