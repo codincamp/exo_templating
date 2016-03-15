@@ -7,26 +7,17 @@ app = Flask(__name__)
 def homepage():
     username = getpass.getuser()
     return render_template('homepage.html',
-                           username=username,
                            active_page='home')
 
 @app.route('/gallery')
 def gallery():
-    photos = []
-    for x in range(30):
-        photos.append({
-            "name" : "Chat %s" % (x+1),
-            "caption" : "Super Chat %s" % (x+1),
-            "url" : "http://lorempixel.com/300/200/cats/",
-        })
     return render_template('gallery.html',
-                            photos=photos,
                             active_page='gallery')
 
-@app.route('/contact')
+@app.route('/album')
 def contact():
-    return render_template('contact.html',
-                            active_page='contact')
+    return render_template('album.html',
+                            active_page='album')
 
 @app.route('/bower_components/<path:path>')
 def send_bower_components(path):

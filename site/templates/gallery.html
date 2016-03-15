@@ -2,16 +2,6 @@
 
 {% block page_title %}Gallery{% endblock %}
 
-{% block nain_title %}Gallery ({{photos|length}}){% endblock %}
-
 {% block content %}
-<div class="row">
-{% for photo in photos %}
-<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-    <a class="thumbnail" href="#">
-        <img class="img-responsive" src="{{ photo.url }}" alt="{{[photo.name]}}">
-        <h3 class="text-center">{{photo.caption}}</h3>
-    </a>
-</div>
-{% endfor %}
+Gallery
 {% endblock %}
